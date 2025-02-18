@@ -72,7 +72,7 @@ EasyDial Checker Service API exposes a single API method:
 
 ### Developer Setup
 - Checkout the EasyDial Checker Service GitHub repository
-> git clone [git@github.com:chw77/EasyToDialChecker.git](https://github.com/chw77/EasyDialChecker)
+> git clone [git@github.com:chw77/EasyDialChecker.git](https://github.com/chw77/EasyDialChecker)
 
 - Build using maven
 > mvn clean install
