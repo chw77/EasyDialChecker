@@ -7,6 +7,7 @@
 - [Setup](#setup)
     + [Prerequisites](#prerequisites)
     + [Developer Setup](#developer-setup)
+    + [Deployment](#deployment)
 - [Implementation Details](#implementation-details)
     + [Persistence](#persistence)
     + [Logging](#logging)
@@ -80,6 +81,10 @@ EasyDial Checker Service API exposes a single API method:
 - Run the Spring Boot Application using Maven
 > mvn spring-boot:run
 
+### Deployment
+- Run the generated EasyDialChecker-0.0.1-SNAPSHOT.jar file under target folder
+> java -jar EasyDialChecker-0.0.1-SNAPSHOT.jar
+
 ## Implementation Details
 EasyDial Checker Service is implemented following the layered architecture.
 - Controller
@@ -115,7 +120,7 @@ The application supports config points via the application.properties file.
 The EasyDial Checker Service Unit Tests follow the Arrange-Act-Assert test pattern and are performed using Spring and JUnit 5.
 
 ### Manual Testing
-Sample Postman requests are available under the /postman folder for manual testing.
+Sample Postman requests are available under the /postman folder for manual testing. Both Success and failure requests available under the postman collection. 
 
 ## Keypad Adjacent Map Logic
 The **Adjacent Map** represents the mapping of adjacent keys on a standard telephone keypad. This logic is used to determine which numbers are adjacent to each other, allowing the validation of "easy-to-dial" phone numbers based on their position on the keypad.
@@ -165,7 +170,7 @@ The main implementation decisions behind the EasyDial Checker Service are availa
         - If the text is available in the cache, the persistence file won't be updated with the record to prevent duplication.
     - If the text isn't available in the cache:
         - Perform EasyDial check logic to determine the incoming text status.
-        - The **Easy to Dial** logic checks whether a phone number is easy to dial based on the adjacency of the digits on a standard telephone keypad. 
+        - The **Easy to Dial** logic checks whether a phone number is easy to dial based on the adjacency of the digits on a standard telephone keypad.
         - A phone number is considered **easy to dial** if each digit in the number is adjacent to the next digit on the keypad.
         - Update the cache with the obtained results.
         - Persist the text and easy to dial status as a comma-delimited value in the persistence file.
