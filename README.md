@@ -7,10 +7,9 @@
 - [Setup](#setup)
     + [Prerequisites](#prerequisites)
     + [Developer Setup](#developer-setup)
-    + [Deployment](#deployment)
 - [Implementation Details](#implementation-details)
-    +[Persistence](#persistence)
-    +[Logging](#logging)
+    + [Persistence](#persistence)
+    + [Logging](#logging)
     + [Configuration](#configuration)
 - [Testing](#testing)
     + [Unit Testing](#unit-testing)
@@ -23,14 +22,14 @@
 - [Owner](#owner)
 
 ## Summary
-The EasyDial Checker Service is a [Spring Boot](https://spring.io/projects/spring-boot) 3.3.8 application which exposes a [RESTful Web Service](https://docs.oracle.com/javaee/6/tutorial/doc/gijqy.html) API to validate input text is Easy To Dial or not.
+The EasyDial Checker Service is a [Spring Boot](https://spring.io/projects/spring-boot) 3.3.8 application that exposes a RESTful Web Service API to validate whether input text is Easy To Dial.
 
 ## Design
 
 ### API
 EasyDial Checker Service API exposes a single API method:
-- /easydial - accepts easydial request containing text and returns easydial response with status
-- Successful requests returns results with HTTP 200 OK status code.
+- /easydial - accepts EasyDialRequest containing text and returns EasyDialResponse with status
+- Successful requests return results with HTTP 200 OK status code.
 - Sample API URL for the localhost environment:
     - HTTP POST
         - http://localhost:8080/easydial
@@ -49,9 +48,9 @@ EasyDial Checker Service API exposes a single API method:
       }`
 
 ### Validation
-- API accepts requests containing with digits (0-9) and all types of whitespace (including spaces, tabs, and newlines)
+- API accepts requests containing digits (0-9) and all types of whitespace (including spaces, tabs, and newlines)
 - The validation logic validates the text values
-- Unsuccessful requests returns HTTP 400 Bad Request status code
+- Unsuccessful requests return HTTP 400 Bad Request status code
     - Invalid EasyDial Request:
 
       `{
@@ -63,7 +62,7 @@ EasyDial Checker Service API exposes a single API method:
       `{
       "status": null
       }`
-- Validation logic is configurable and can update using application.properties file.
+- Validation logic is configurable and can be updated using the application.properties file.
 
 ## Setup
 
@@ -71,14 +70,15 @@ EasyDial Checker Service API exposes a single API method:
 - Java 1.17 +
 
 ### Developer Setup
-- Checkout the EasyDial Checker Service GitHub repository
+- Checkout the EasyDialChecker Service GitHub repository
 > git clone [git@github.com:chw77/EasyDialChecker.git](https://github.com/chw77/EasyDialChecker)
 
-- Build using maven
+- Build using Maven
 > mvn clean install
-### Deployment
-- Run the generated EasyDialChecker-1.0.0-SNAPSHOT.jar file under target folder
-> java -jar EasyDialChecker-1.0.0-SNAPSHOT.jar
+
+- Import the project into an IDE
+- Run the Spring Boot Application using Maven
+> mvn spring-boot:run
 
 ## Implementation Details
 EasyDial Checker Service is implemented following the layered architecture.
@@ -98,13 +98,13 @@ EasyDial Checker Service is implemented following the layered architecture.
         - CleanupUtils
 
 ### Persistence
-- Valid input requests are stored under easydial-persistence.txt file. Filename can be configurable via application.properties file.
+- Valid input requests are stored under the easydial-persistence.txt file. The filename can be configurable via the application.properties file.
 
 ### Logging
-- Logs are available under /log folder easydial-checker.log file. Log settings can be configurable via application.properties file.
+- Logs are available under /log folder easydial-checker.log file. Log settings can be configurable via the application.properties file.
 
 ### Configuration
-Application supports config points via application.properties file.
+The application supports config points via the application.properties file.
 - Validation Regex
 - Persistence Filename
 - Log Settings
@@ -112,11 +112,10 @@ Application supports config points via application.properties file.
 ## Testing
 
 ### Unit Testing
-The EasyDial Checker Service Unit Tests follow the [Arrange-Act-Assert](http://wiki.c2.com/?ArrangeActAssert) test pattern and are performed using Spring and JUnit 5.
-- Run unit tests using maven
-> mvn clean test
+The EasyDial Checker Service Unit Tests follow the Arrange-Act-Assert test pattern and are performed using Spring and JUnit 5.
+
 ### Manual Testing
-Sample Postman requests are available under /postman folder for manual testing.
+Sample Postman requests are available under the /postman folder for manual testing.
 
 ## Keypad Adjacent Map Logic
 The **Adjacent Map** represents the mapping of adjacent keys on a standard telephone keypad. This logic is used to determine which numbers are adjacent to each other, allowing the validation of "easy-to-dial" phone numbers based on their position on the keypad.
@@ -163,24 +162,24 @@ The main implementation decisions behind the EasyDial Checker Service are availa
     - During the application startup build the keypad adjacent map to check if the number is easy to use in the logic.
     - If the text is available in the cache:
         - Read the associated easy to dial status value from the cache and return EasyDialResponse.
-        - If the text is available in the cache, persistence file won't be updated with the record to prevent the duplication.
+        - If the text is available in the cache, the persistence file won't be updated with the record to prevent duplication.
     - If the text isn't available in the cache:
         - Perform EasyDial check logic to determine the incoming text status.
         - The **Easy to Dial** logic checks whether a phone number is easy to dial based on the adjacency of the digits on a standard telephone keypad. 
         - A phone number is considered **easy to dial** if each digit in the number is adjacent to the next digit on the keypad.
-        - Update cache with the obtained results.
+        - Update the cache with the obtained results.
         - Persist the text and easy to dial status as a comma-delimited value in the persistence file.
     - Return successful EasyDialResponse with the obtained status.
 - If the incoming request is invalid:
     - Return failure EasyDialResponse with the null status.
 
 ### Assumptions
-- EasyDialResponse will return both success and failure scenarios with the different status.
+- EasyDialResponse will return both success and failure scenarios with different statuses.
     - success: **true** or **false**
     - failure: **null**
 - Consecutive same digits (e.g. "111", "5566"") not being considered as "easy to dial."
 - Descriptive exception details aren't exposed to the clients and log any encountered exceptions.
-- Logs monitoring is required to identify the persistence layer data errors.
+- Log monitoring is required to identify the persistence layer data errors.
 
 ## Owner
 Charitha Dunuwille
