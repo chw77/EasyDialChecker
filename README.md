@@ -95,7 +95,7 @@ EasyDial Checker Service is implemented following the layered architecture.
         - BaseRepository.java / FileRepository.java
 - Utility
     - Utility service is:
-        - CleanupUtils
+        - CleanupUtils.java
 
 ### Persistence
 - Valid input requests are stored under the easydial-persistence.txt file. The filename can be configurable via the application.properties file.
