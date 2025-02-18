@@ -1,14 +1,20 @@
 package com.codechallenge.easydialchecker.service;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import com.codechallenge.easydialchecker.model.EasyDialText;
 import com.codechallenge.easydialchecker.repository.BaseRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.*;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class EasyDialServiceImplTest {
 
@@ -32,16 +38,6 @@ public class EasyDialServiceImplTest {
 
         // Set the keypadMap using reflection
         setKeypadMap(keypadMap);
-    }
-
-    private void setKeypadMap(Map<Character, List<Character>> keypadMap) {
-        try {
-            java.lang.reflect.Field field = EasyDialServiceImpl.class.getDeclaredField("keypadMap");
-            field.setAccessible(true);
-            field.set(easyDialService, keypadMap);
-        } catch (NoSuchFieldException | IllegalAccessException e) {
-            e.printStackTrace();
-        }
     }
 
     @Test
@@ -82,6 +78,15 @@ public class EasyDialServiceImplTest {
         assertNotNull(result);
         assertTrue(result.isEasyToDial());  // A single digit is considered "easy."
         assertEquals(phoneNumber, result.getValue());
+    }
+
+    private void setKeypadMap(Map<Character, List<Character>> keypadMap) {
+        try {
+            java.lang.reflect.Field field = EasyDialServiceImpl.class.getDeclaredField("keypadMap");
+            field.setAccessible(true);
+            field.set(easyDialService, keypadMap);
+        } catch (Exception e) {
+        }
     }
 }
 

@@ -1,5 +1,7 @@
 package com.codechallenge.easydialchecker.service;
 
+import com.codechallenge.easydialchecker.exception.KeypadException;
+import com.codechallenge.easydialchecker.exception.PersistenceException;
 import com.codechallenge.easydialchecker.model.EasyDialKeypad;
 import com.codechallenge.easydialchecker.model.EasyDialText;
 import com.codechallenge.easydialchecker.repository.BaseRepository;
@@ -13,6 +15,10 @@ import java.util.*;
 public class EasyDialServiceImpl implements EasyDialService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(EasyDialServiceImpl.class);
+
+    private static final String KEYPAD_ERROR_MESSAGE = "Adjacent key map creation failed.";
+    private static final String PERSISTENCE_ERROR = "Easy dial text response persistence failed.";
+
     private final Map<Character, List<Character>> keypadMap = new HashMap<>();
     private final BaseRepository baseRepository;
 
@@ -39,18 +45,19 @@ public class EasyDialServiceImpl implements EasyDialService {
     }
 
     @Override
-    public void saveEasyDialText(EasyDialText easyDialText) {
+    public void saveEasyDialText(EasyDialText easyDialText) throws PersistenceException {
         // Persist easy to dial phone numbers.
         try {
             baseRepository.save(easyDialText);
         } catch (Exception exception) {
-            LOGGER.error("Easydial text response save in file failed. Message: " + exception.getMessage());
+            LOGGER.error(PERSISTENCE_ERROR + " {}", exception.getMessage());
+            throw new PersistenceException(PERSISTENCE_ERROR, exception);
         }
 
     }
 
     @Override
-    public void buildAdjacentKeyMap() {
+    public void buildAdjacentKeyMap() throws KeypadException {
         char[][] keypad = EasyDialKeypad.generateKeypad();
         int rows = keypad.length;
         int cols = keypad[0].length;
@@ -88,8 +95,8 @@ public class EasyDialServiceImpl implements EasyDialService {
                 }
             }
         } catch (Exception exception) {
-            LOGGER.error("Adjacent key map creation failure. message: " + exception.getMessage());
-            throw new IllegalStateException(exception);
+            LOGGER.error(KEYPAD_ERROR_MESSAGE + " {}", exception.getMessage());
+            throw new KeypadException(KEYPAD_ERROR_MESSAGE, exception);
         }
     }
 }

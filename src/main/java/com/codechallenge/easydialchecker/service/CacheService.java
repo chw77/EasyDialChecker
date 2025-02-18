@@ -1,5 +1,6 @@
 package com.codechallenge.easydialchecker.service;
 
+import com.codechallenge.easydialchecker.exception.PersistenceException;
 import com.codechallenge.easydialchecker.model.EasyDialText;
 
 public interface CacheService {
@@ -24,6 +25,8 @@ public interface CacheService {
 
     /**
      * Preloads the cache with initial data to ensure quick access.
+     *
+     * @throws PersistenceException If an error occurs during the cache preload.
      */
-    void preloadCache();
+    void preloadCache() throws PersistenceException;
 }

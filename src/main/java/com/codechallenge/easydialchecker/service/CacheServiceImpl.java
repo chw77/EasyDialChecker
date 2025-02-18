@@ -15,6 +15,8 @@ public class CacheServiceImpl implements CacheService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CacheServiceImpl.class);
     private static final String COMMA_DELIMITER = ",";
+    private static final String PRELOAD_ERROR = "Persistence layer error: Unable to preload data.";
+    private static final String PERSISTENCE_ERROR = "Persistence data error: Found tampered data, expected format PHONE_NUMBER,STATUS.";
 
     private static HashMap<String, Boolean> EASYDIAL_CACHE;
 
@@ -44,16 +46,21 @@ public class CacheServiceImpl implements CacheService {
     }
 
     @Override
-    public void preloadCache() {
+    public void preloadCache() throws PersistenceException {
         List<String> records = null;
         try {
             records = baseRepository.read();
-        } catch (PersistenceException e) {
+        } catch (PersistenceException exception) {
             // Unable to preload data from the persistence file.
             // The new file will be generated, if the persistence file isn't available.
-            LOGGER.warn("Persistence layer error: Unable to preload data.");
+            LOGGER.error(PRELOAD_ERROR + " {}", exception.getMessage());
+            throw new PersistenceException(PRELOAD_ERROR, exception);
         }
 
+        processRecords(records);
+    }
+
+    private void processRecords(List<String> records) throws PersistenceException {
         if (null != records) {
             for (String record : records) {
                 LOGGER.debug("Cache preload record: " + record);
@@ -62,11 +69,11 @@ public class CacheServiceImpl implements CacheService {
                     boolean value = Boolean.parseBoolean(entry[1]);
                     EASYDIAL_CACHE.put(entry[0], value);
                 } else {
-                    // Expect data in TEXT,STATUS format.
-                    LOGGER.warn("Persistence data error: Found tampered data.");
+                    // Expect data in PHONE_NUMBER,STATUS format.
+                    LOGGER.error(PERSISTENCE_ERROR);
+                    throw new PersistenceException(PERSISTENCE_ERROR);
                 }
             }
         }
-
     }
 }

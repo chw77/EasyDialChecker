@@ -1,5 +1,7 @@
 package com.codechallenge.easydialchecker.service;
 
+import com.codechallenge.easydialchecker.exception.KeypadException;
+import com.codechallenge.easydialchecker.exception.PersistenceException;
 import com.codechallenge.easydialchecker.model.EasyDialText;
 
 public interface EasyDialService {
@@ -20,13 +22,17 @@ public interface EasyDialService {
      *
      * @param easyDialText The {@code EasyDialText} object containing the
      *                     phone number and its easy-to-dial evaluation (true/false).
+     *
+     * @throws PersistenceException If an error occurs while persisting the records.
      */
-    void saveEasyDialText(EasyDialText easyDialText);
+    void saveEasyDialText(EasyDialText easyDialText) throws PersistenceException;
 
     /**
      * Builds the adjacency map for the telephone keypad, excluding '*' and '#'.
      * This map helps validate easy-to-dial phone numbers based on adjacent keys.
+     *
+     * @throws KeypadException If an error occurs during the keypad generation.
      */
-    void buildAdjacentKeyMap();
+    void buildAdjacentKeyMap() throws KeypadException;
 
 }

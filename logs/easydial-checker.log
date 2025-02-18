@@ -145,3 +145,223 @@
 2025-02-18T04:04:22.702Z  INFO 82269 --- [easydial] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2025-02-18T04:04:22.732Z  INFO 82269 --- [easydial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
 2025-02-18T04:04:22.741Z  INFO 82269 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : Started EasyDialCheckerApplication in 2.302 seconds (process running for 2.836)
+2025-02-18T05:16:30.894Z  INFO 90425 --- [easydial] [main] c.c.e.controller.EasyDialControllerTest  : Starting EasyDialControllerTest using Java 23.0.1 with PID 90425 (started by charithawijenayake in /Users/charithawijenayake/Dev/Java/easydial)
+2025-02-18T05:16:30.896Z  INFO 90425 --- [easydial] [main] c.c.e.controller.EasyDialControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-02-18T05:16:32.162Z  INFO 90425 --- [easydial] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-02-18T05:16:32.163Z  INFO 90425 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T05:16:32.164Z  INFO 90425 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-02-18T05:16:32.209Z  INFO 90425 --- [easydial] [main] c.c.e.controller.EasyDialControllerTest  : Started EasyDialControllerTest in 1.651 seconds (process running for 3.104)
+2025-02-18T05:16:33.318Z  INFO 90425 --- [easydial] [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2025-02-18T05:16:33.319Z  INFO 90425 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T05:16:33.319Z  INFO 90425 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-02-18T05:16:33.559Z  INFO 90425 --- [easydial] [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2025-02-18T05:16:33.560Z  INFO 90425 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T05:16:33.560Z  INFO 90425 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-02-18T05:16:33.580Z  INFO 90425 --- [easydial] [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2025-02-18T05:16:33.580Z  INFO 90425 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T05:16:33.581Z  INFO 90425 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-02-18T05:16:41.454Z  INFO 90449 --- [easydial] [main] c.c.e.repository.FileRepositoryTest      : Starting FileRepositoryTest using Java 23.0.1 with PID 90449 (started by charithawijenayake in /Users/charithawijenayake/Dev/Java/easydial)
+2025-02-18T05:16:41.455Z  INFO 90449 --- [easydial] [main] c.c.e.repository.FileRepositoryTest      : No active profile set, falling back to 1 default profile: "default"
+2025-02-18T05:16:42.741Z  INFO 90449 --- [easydial] [main] c.c.e.repository.FileRepositoryTest      : Started FileRepositoryTest in 1.73 seconds (process running for 3.061)
+2025-02-18T05:16:53.086Z  INFO 90477 --- [easydial] [main] c.c.e.service.CacheServiceImplTest       : Starting CacheServiceImplTest using Java 23.0.1 with PID 90477 (started by charithawijenayake in /Users/charithawijenayake/Dev/Java/easydial)
+2025-02-18T05:16:53.087Z  INFO 90477 --- [easydial] [main] c.c.e.service.CacheServiceImplTest       : No active profile set, falling back to 1 default profile: "default"
+2025-02-18T05:16:54.401Z  INFO 90477 --- [easydial] [main] c.c.e.service.CacheServiceImplTest       : Started CacheServiceImplTest in 1.642 seconds (process running for 2.763)
+2025-02-18T05:17:09.465Z  INFO 90512 --- [easydial] [main] c.c.e.service.ValidationServiceImplTest  : Starting ValidationServiceImplTest using Java 23.0.1 with PID 90512 (started by charithawijenayake in /Users/charithawijenayake/Dev/Java/easydial)
+2025-02-18T05:17:09.466Z  INFO 90512 --- [easydial] [main] c.c.e.service.ValidationServiceImplTest  : No active profile set, falling back to 1 default profile: "default"
+2025-02-18T05:17:10.516Z  INFO 90512 --- [easydial] [main] c.c.e.service.ValidationServiceImplTest  : Started ValidationServiceImplTest in 1.367 seconds (process running for 2.714)
+2025-02-18T08:33:12.504Z  INFO 5043 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : Starting EasyDialCheckerApplication using Java 23.0.1 with PID 5043 (/Users/charithawijenayake/Dev/Java/easydial/target/classes started by charithawijenayake in /Users/charithawijenayake/Dev/Java/easydial)
+2025-02-18T08:33:12.507Z  INFO 5043 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-02-18T08:33:12.581Z  INFO 5043 --- [easydial] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-18T08:33:12.581Z  INFO 5043 --- [easydial] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-18T08:33:13.506Z  INFO 5043 --- [easydial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-18T08:33:13.526Z  INFO 5043 --- [easydial] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-18T08:33:13.526Z  INFO 5043 --- [easydial] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-18T08:33:13.572Z  INFO 5043 --- [easydial] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-18T08:33:13.572Z  INFO 5043 --- [easydial] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 991 ms
+2025-02-18T08:33:13.946Z  INFO 5043 --- [easydial] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-18T08:33:13.974Z  INFO 5043 --- [easydial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-18T08:33:13.982Z  INFO 5043 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : Started EasyDialCheckerApplication in 1.948 seconds (process running for 2.453)
+2025-02-18T08:33:36.112Z  INFO 5043 --- [easydial] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-18T08:33:36.113Z  INFO 5043 --- [easydial] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-18T08:33:36.114Z  INFO 5043 --- [easydial] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-18T08:33:55.271Z  INFO 5043 --- [easydial] [http-nio-8080-exec-4] c.c.e.controller.EasyDialController      : Easy dial check tasks are completed.
+2025-02-18T08:35:32.797Z  INFO 5314 --- [easydial] [main] c.c.e.controller.EasyDialControllerTest  : Starting EasyDialControllerTest using Java 23.0.1 with PID 5314 (started by charithawijenayake in /Users/charithawijenayake/Dev/Java/easydial)
+2025-02-18T08:35:32.798Z  INFO 5314 --- [easydial] [main] c.c.e.controller.EasyDialControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-02-18T08:35:33.850Z  INFO 5314 --- [easydial] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-02-18T08:35:33.850Z  INFO 5314 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T08:35:33.851Z  INFO 5314 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-02-18T08:35:33.875Z  INFO 5314 --- [easydial] [main] c.c.e.controller.EasyDialControllerTest  : Started EasyDialControllerTest in 1.409 seconds (process running for 2.712)
+2025-02-18T08:35:34.918Z  INFO 5314 --- [easydial] [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2025-02-18T08:35:34.919Z  INFO 5314 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T08:35:34.920Z  INFO 5314 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-02-18T08:35:35.035Z  INFO 5314 --- [easydial] [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2025-02-18T08:35:35.035Z  INFO 5314 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T08:35:35.035Z  INFO 5314 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-02-18T08:35:35.057Z  INFO 5314 --- [easydial] [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2025-02-18T08:35:35.057Z  INFO 5314 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T08:35:35.057Z  INFO 5314 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-02-18T08:37:11.214Z  INFO 5505 --- [easydial] [main] c.c.e.controller.EasyDialControllerTest  : Starting EasyDialControllerTest using Java 23.0.1 with PID 5505 (started by charithawijenayake in /Users/charithawijenayake/Dev/Java/easydial)
+2025-02-18T08:37:11.216Z  INFO 5505 --- [easydial] [main] c.c.e.controller.EasyDialControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-02-18T08:37:12.339Z  INFO 5505 --- [easydial] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-02-18T08:37:12.339Z  INFO 5505 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T08:37:12.340Z  INFO 5505 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-02-18T08:37:12.380Z  INFO 5505 --- [easydial] [main] c.c.e.controller.EasyDialControllerTest  : Started EasyDialControllerTest in 1.432 seconds (process running for 2.647)
+2025-02-18T08:37:13.446Z  INFO 5505 --- [easydial] [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2025-02-18T08:37:13.446Z  INFO 5505 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T08:37:13.447Z  INFO 5505 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-02-18T08:37:13.648Z  INFO 5505 --- [easydial] [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2025-02-18T08:37:13.648Z  INFO 5505 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T08:37:13.648Z  INFO 5505 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-02-18T08:37:13.668Z  INFO 5505 --- [easydial] [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2025-02-18T08:37:13.668Z  INFO 5505 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T08:37:13.668Z  INFO 5505 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-02-18T09:31:32.400Z  INFO 11527 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : Starting EasyDialCheckerApplication using Java 23.0.1 with PID 11527 (/Users/charithawijenayake/Dev/Java/easydial/target/classes started by charithawijenayake in /Users/charithawijenayake/Dev/Java/easydial)
+2025-02-18T09:31:32.403Z  INFO 11527 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-02-18T09:31:32.484Z  INFO 11527 --- [easydial] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-18T09:31:32.484Z  INFO 11527 --- [easydial] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-18T09:31:33.493Z  INFO 11527 --- [easydial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-18T09:31:33.513Z  INFO 11527 --- [easydial] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-18T09:31:33.513Z  INFO 11527 --- [easydial] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-18T09:31:33.557Z  INFO 11527 --- [easydial] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-18T09:31:33.557Z  INFO 11527 --- [easydial] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1072 ms
+2025-02-18T09:31:33.953Z  INFO 11527 --- [easydial] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-18T09:31:33.985Z  INFO 11527 --- [easydial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-18T09:31:33.995Z  INFO 11527 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : Started EasyDialCheckerApplication in 2.076 seconds (process running for 2.636)
+2025-02-18T09:31:42.963Z  INFO 11527 --- [easydial] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-18T09:31:42.963Z  INFO 11527 --- [easydial] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-18T09:31:42.964Z  INFO 11527 --- [easydial] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-18T09:31:43.096Z  INFO 11527 --- [easydial] [http-nio-8080-exec-1] c.c.e.controller.EasyDialController      : Easy dial check tasks are completed.
+2025-02-18T09:31:52.268Z  WARN 11527 --- [easydial] [http-nio-8080-exec-3] c.c.e.controller.EasyDialController      : Bad Request - Request validation failure.
+2025-02-18T09:33:08.177Z  INFO 11717 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : Starting EasyDialCheckerApplication using Java 23.0.1 with PID 11717 (/Users/charithawijenayake/Dev/Java/easydial/target/classes started by charithawijenayake in /Users/charithawijenayake/Dev/Java/easydial)
+2025-02-18T09:33:08.179Z  INFO 11717 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-02-18T09:33:08.253Z  INFO 11717 --- [easydial] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-18T09:33:08.253Z  INFO 11717 --- [easydial] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-18T09:33:09.194Z  INFO 11717 --- [easydial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-18T09:33:09.210Z  INFO 11717 --- [easydial] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-18T09:33:09.210Z  INFO 11717 --- [easydial] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-18T09:33:09.254Z  INFO 11717 --- [easydial] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-18T09:33:09.254Z  INFO 11717 --- [easydial] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1000 ms
+2025-02-18T09:33:09.655Z  INFO 11717 --- [easydial] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-18T09:33:09.684Z  INFO 11717 --- [easydial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-18T09:33:09.693Z  INFO 11717 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : Started EasyDialCheckerApplication in 1.966 seconds (process running for 2.478)
+2025-02-18T09:33:09.699Z ERROR 11717 --- [easydial] [restartedMain] c.c.e.service.CacheServiceImpl           : Persistence data error: Found tampered data, expected format PHONE_NUMBER,STATUS.
+2025-02-18T09:33:09.699Z ERROR 11717 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : Unable to start the EasyDial Checker ApplicationPersistence data error: Found tampered data, expected format PHONE_NUMBER,STATUS.
+2025-02-18T09:50:28.671Z  INFO 13628 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : Starting EasyDialCheckerApplication using Java 23.0.1 with PID 13628 (/Users/charithawijenayake/Dev/Java/easydial/target/classes started by charithawijenayake in /Users/charithawijenayake/Dev/Java/easydial)
+2025-02-18T09:50:28.673Z  INFO 13628 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-02-18T09:50:28.753Z  INFO 13628 --- [easydial] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-18T09:50:28.753Z  INFO 13628 --- [easydial] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-18T09:50:29.730Z  INFO 13628 --- [easydial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-18T09:50:29.749Z  INFO 13628 --- [easydial] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-18T09:50:29.750Z  INFO 13628 --- [easydial] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-18T09:50:29.794Z  INFO 13628 --- [easydial] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-18T09:50:29.794Z  INFO 13628 --- [easydial] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1040 ms
+2025-02-18T09:50:30.150Z  INFO 13628 --- [easydial] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-18T09:50:30.181Z  INFO 13628 --- [easydial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-18T09:50:30.190Z  INFO 13628 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : Started EasyDialCheckerApplication in 2.014 seconds (process running for 2.556)
+2025-02-18T09:50:36.324Z  INFO 13628 --- [easydial] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-18T09:50:36.325Z  INFO 13628 --- [easydial] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-18T09:50:36.326Z  INFO 13628 --- [easydial] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-02-18T09:50:36.446Z  WARN 13628 --- [easydial] [http-nio-8080-exec-2] c.c.e.controller.EasyDialController      : Bad Request - Request validation failure.
+2025-02-18T09:50:41.389Z  INFO 13628 --- [easydial] [http-nio-8080-exec-4] c.c.e.controller.EasyDialController      : Easy dial check tasks are completed.
+2025-02-18T10:27:46.297Z  INFO 16301 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : Starting EasyDialCheckerApplication using Java 23.0.1 with PID 16301 (/Users/charithawijenayake/Dev/Java/easydial/target/classes started by charithawijenayake in /Users/charithawijenayake/Dev/Java/easydial)
+2025-02-18T10:27:46.299Z  INFO 16301 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-02-18T10:27:46.375Z  INFO 16301 --- [easydial] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-18T10:27:46.376Z  INFO 16301 --- [easydial] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-18T10:27:47.342Z  INFO 16301 --- [easydial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-18T10:27:47.363Z  INFO 16301 --- [easydial] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-18T10:27:47.363Z  INFO 16301 --- [easydial] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-18T10:27:47.407Z  INFO 16301 --- [easydial] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-18T10:27:47.407Z  INFO 16301 --- [easydial] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1031 ms
+2025-02-18T10:27:47.760Z  INFO 16301 --- [easydial] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-18T10:27:47.789Z  INFO 16301 --- [easydial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-18T10:27:47.797Z  INFO 16301 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : Started EasyDialCheckerApplication in 1.969 seconds (process running for 2.471)
+2025-02-18T10:29:32.013Z  INFO 16301 --- [easydial] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 17 class path changes (0 additions, 0 deletions, 17 modifications)
+2025-02-18T10:29:32.117Z  INFO 16301 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : Starting EasyDialCheckerApplication using Java 23.0.1 with PID 16301 (/Users/charithawijenayake/Dev/Java/easydial/target/classes started by charithawijenayake in /Users/charithawijenayake/Dev/Java/easydial)
+2025-02-18T10:29:32.117Z  INFO 16301 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-02-18T10:29:32.310Z  INFO 16301 --- [easydial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-18T10:29:32.311Z  INFO 16301 --- [easydial] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-18T10:29:32.312Z  INFO 16301 --- [easydial] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-18T10:29:32.325Z  INFO 16301 --- [easydial] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-18T10:29:32.326Z  INFO 16301 --- [easydial] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 206 ms
+2025-02-18T10:29:32.418Z  INFO 16301 --- [easydial] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-18T10:29:32.426Z  INFO 16301 --- [easydial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-18T10:29:32.429Z  INFO 16301 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : Started EasyDialCheckerApplication in 0.338 seconds (process running for 107.103)
+2025-02-18T10:29:32.432Z  INFO 16301 --- [easydial] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-02-18T10:29:34.462Z  INFO 16498 --- [easydial] [main] c.c.e.repository.FileRepositoryTest      : Starting FileRepositoryTest using Java 23.0.1 with PID 16498 (started by charithawijenayake in /Users/charithawijenayake/Dev/Java/easydial)
+2025-02-18T10:29:34.463Z  INFO 16498 --- [easydial] [main] c.c.e.repository.FileRepositoryTest      : No active profile set, falling back to 1 default profile: "default"
+2025-02-18T10:29:35.585Z  INFO 16498 --- [easydial] [main] c.c.e.repository.FileRepositoryTest      : Started FileRepositoryTest in 1.469 seconds (process running for 2.534)
+2025-02-18T10:29:36.622Z  INFO 16498 --- [easydial] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.codechallenge.easydialchecker.controller.EasyDialControllerTest]: EasyDialControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-18T10:29:36.638Z  INFO 16498 --- [easydial] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.codechallenge.easydialchecker.EasyDialCheckerApplication for test class com.codechallenge.easydialchecker.controller.EasyDialControllerTest
+2025-02-18T10:29:36.664Z  INFO 16498 --- [easydial] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-02-18T10:29:36.690Z  INFO 16498 --- [easydial] [main] c.c.e.controller.EasyDialControllerTest  : Starting EasyDialControllerTest using Java 23.0.1 with PID 16498 (started by charithawijenayake in /Users/charithawijenayake/Dev/Java/easydial)
+2025-02-18T10:29:36.691Z  INFO 16498 --- [easydial] [main] c.c.e.controller.EasyDialControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-02-18T10:29:37.008Z  INFO 16498 --- [easydial] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-02-18T10:29:37.009Z  INFO 16498 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T10:29:37.010Z  INFO 16498 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-02-18T10:29:37.018Z  INFO 16498 --- [easydial] [main] c.c.e.controller.EasyDialControllerTest  : Started EasyDialControllerTest in 0.354 seconds (process running for 3.967)
+2025-02-18T10:29:37.236Z  INFO 16498 --- [easydial] [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2025-02-18T10:29:37.237Z  INFO 16498 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T10:29:37.238Z  INFO 16498 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-02-18T10:29:37.436Z  INFO 16498 --- [easydial] [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2025-02-18T10:29:37.436Z  INFO 16498 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T10:29:37.437Z  INFO 16498 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-02-18T10:29:37.454Z  INFO 16498 --- [easydial] [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2025-02-18T10:29:37.455Z  INFO 16498 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T10:29:37.455Z  INFO 16498 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-02-18T10:29:37.478Z  INFO 16498 --- [easydial] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.codechallenge.easydialchecker.service.CacheServiceImplTest]: CacheServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-18T10:29:37.503Z  INFO 16498 --- [easydial] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.codechallenge.easydialchecker.EasyDialCheckerApplication for test class com.codechallenge.easydialchecker.service.CacheServiceImplTest
+2025-02-18T10:29:37.575Z  INFO 16498 --- [easydial] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.codechallenge.easydialchecker.service.ValidationServiceImplTest]: ValidationServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-18T10:29:37.577Z  INFO 16498 --- [easydial] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.codechallenge.easydialchecker.EasyDialCheckerApplication for test class com.codechallenge.easydialchecker.service.ValidationServiceImplTest
+2025-02-18T10:29:37.636Z  INFO 16498 --- [easydial] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.codechallenge.easydialchecker.EasyDialCheckerApplicationTests]: EasyDialCheckerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-18T10:29:37.642Z  INFO 16498 --- [easydial] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.codechallenge.easydialchecker.EasyDialCheckerApplication for test class com.codechallenge.easydialchecker.EasyDialCheckerApplicationTests
+2025-02-18T10:43:31.872Z  INFO 18120 --- [easydial] [main] c.c.e.repository.FileRepositoryTest      : Starting FileRepositoryTest using Java 23.0.1 with PID 18120 (started by charithawijenayake in /Users/charithawijenayake/Dev/Java/easydial)
+2025-02-18T10:43:31.874Z  INFO 18120 --- [easydial] [main] c.c.e.repository.FileRepositoryTest      : No active profile set, falling back to 1 default profile: "default"
+2025-02-18T10:43:33.050Z  INFO 18120 --- [easydial] [main] c.c.e.repository.FileRepositoryTest      : Started FileRepositoryTest in 1.545 seconds (process running for 2.586)
+2025-02-18T10:43:34.071Z  INFO 18120 --- [easydial] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.codechallenge.easydialchecker.controller.EasyDialControllerTest]: EasyDialControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-18T10:43:34.088Z  INFO 18120 --- [easydial] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.codechallenge.easydialchecker.EasyDialCheckerApplication for test class com.codechallenge.easydialchecker.controller.EasyDialControllerTest
+2025-02-18T10:43:34.111Z  INFO 18120 --- [easydial] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-02-18T10:43:34.129Z  INFO 18120 --- [easydial] [main] c.c.e.controller.EasyDialControllerTest  : Starting EasyDialControllerTest using Java 23.0.1 with PID 18120 (started by charithawijenayake in /Users/charithawijenayake/Dev/Java/easydial)
+2025-02-18T10:43:34.129Z  INFO 18120 --- [easydial] [main] c.c.e.controller.EasyDialControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-02-18T10:43:34.375Z  INFO 18120 --- [easydial] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-02-18T10:43:34.376Z  INFO 18120 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T10:43:34.377Z  INFO 18120 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-02-18T10:43:34.388Z  INFO 18120 --- [easydial] [main] c.c.e.controller.EasyDialControllerTest  : Started EasyDialControllerTest in 0.278 seconds (process running for 3.925)
+2025-02-18T10:43:34.574Z  INFO 18120 --- [easydial] [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2025-02-18T10:43:34.574Z  INFO 18120 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T10:43:34.575Z  INFO 18120 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-02-18T10:43:34.777Z  INFO 18120 --- [easydial] [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2025-02-18T10:43:34.778Z  INFO 18120 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T10:43:34.778Z  INFO 18120 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-02-18T10:43:34.795Z  INFO 18120 --- [easydial] [main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2025-02-18T10:43:34.795Z  INFO 18120 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-18T10:43:34.796Z  INFO 18120 --- [easydial] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-02-18T10:43:34.809Z  INFO 18120 --- [easydial] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.codechallenge.easydialchecker.service.CacheServiceImplTest]: CacheServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-18T10:43:34.825Z  INFO 18120 --- [easydial] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.codechallenge.easydialchecker.EasyDialCheckerApplication for test class com.codechallenge.easydialchecker.service.CacheServiceImplTest
+2025-02-18T10:43:34.913Z  INFO 18120 --- [easydial] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.codechallenge.easydialchecker.service.ValidationServiceImplTest]: ValidationServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-18T10:43:34.916Z  INFO 18120 --- [easydial] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.codechallenge.easydialchecker.EasyDialCheckerApplication for test class com.codechallenge.easydialchecker.service.ValidationServiceImplTest
+2025-02-18T10:43:34.991Z  INFO 18120 --- [easydial] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.codechallenge.easydialchecker.EasyDialCheckerApplicationTests]: EasyDialCheckerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-18T10:43:34.996Z  INFO 18120 --- [easydial] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.codechallenge.easydialchecker.EasyDialCheckerApplication for test class com.codechallenge.easydialchecker.EasyDialCheckerApplicationTests
+2025-02-18T10:59:22.199Z  INFO 19957 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : Starting EasyDialCheckerApplication using Java 23.0.1 with PID 19957 (/Users/charithawijenayake/Dev/Java/easydial/target/classes started by charithawijenayake in /Users/charithawijenayake/Dev/Java/easydial)
+2025-02-18T10:59:22.203Z  INFO 19957 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-02-18T10:59:22.281Z  INFO 19957 --- [easydial] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-18T10:59:22.281Z  INFO 19957 --- [easydial] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-18T10:59:23.256Z  INFO 19957 --- [easydial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-02-18T10:59:23.277Z  INFO 19957 --- [easydial] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-18T10:59:23.277Z  INFO 19957 --- [easydial] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-18T10:59:23.325Z  INFO 19957 --- [easydial] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-18T10:59:23.326Z  INFO 19957 --- [easydial] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1043 ms
+2025-02-18T10:59:23.717Z  INFO 19957 --- [easydial] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-02-18T10:59:23.748Z  INFO 19957 --- [easydial] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-02-18T10:59:23.758Z  INFO 19957 --- [easydial] [restartedMain] c.c.e.EasyDialCheckerApplication         : Started EasyDialCheckerApplication in 2.051 seconds (process running for 2.612)
+2025-02-18T10:59:32.058Z  INFO 19957 --- [easydial] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-18T10:59:32.058Z  INFO 19957 --- [easydial] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-02-18T10:59:32.060Z  INFO 19957 --- [easydial] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-02-18T10:59:32.153Z  INFO 19957 --- [easydial] [http-nio-8080-exec-1] c.c.e.controller.EasyDialController      : Easy dial check tasks are completed.
+2025-02-18T10:59:35.432Z  INFO 19957 --- [easydial] [http-nio-8080-exec-3] c.c.e.controller.EasyDialController      : Easy dial check tasks are completed.
+2025-02-18T10:59:38.318Z  INFO 19957 --- [easydial] [http-nio-8080-exec-4] c.c.e.controller.EasyDialController      : Easy dial check tasks are completed.
+2025-02-18T10:59:40.536Z  INFO 19957 --- [easydial] [http-nio-8080-exec-5] c.c.e.controller.EasyDialController      : Easy dial check tasks are completed.
+2025-02-18T10:59:44.764Z  WARN 19957 --- [easydial] [http-nio-8080-exec-6] c.c.e.controller.EasyDialController      : Bad Request - Request validation failure.
+2025-02-18T10:59:47.741Z  INFO 19957 --- [easydial] [http-nio-8080-exec-8] c.c.e.controller.EasyDialController      : Easy dial check tasks are completed.
+2025-02-18T10:59:50.681Z  WARN 19957 --- [easydial] [http-nio-8080-exec-9] c.c.e.controller.EasyDialController      : Bad Request - Request validation failure.
+2025-02-18T10:59:54.148Z  WARN 19957 --- [easydial] [http-nio-8080-exec-2] c.c.e.controller.EasyDialController      : Bad Request - Request validation failure.
+2025-02-18T10:59:56.690Z  WARN 19957 --- [easydial] [http-nio-8080-exec-3] c.c.e.controller.EasyDialController      : Bad Request - Request validation failure.

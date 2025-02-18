@@ -14,6 +14,8 @@ public class ValidationServiceImpl implements ValidationService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ValidationServiceImpl.class);
 
+    private static final String VALIDATION_ERROR = "Input request validation failure. Message ";
+
     @Value(value = "${validationRegex}")
     private String validationRegex;
 
@@ -31,7 +33,7 @@ public class ValidationServiceImpl implements ValidationService {
                 }
             }
         } catch (Exception exception) {
-            LOGGER.error("Easydial input request validation failure. Message " + exception.getMessage());
+            LOGGER.error(VALIDATION_ERROR + " {}", exception.getMessage());
         }
         return isValid;
     }

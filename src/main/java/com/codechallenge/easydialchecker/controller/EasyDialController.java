@@ -1,5 +1,6 @@
 package com.codechallenge.easydialchecker.controller;
 
+import com.codechallenge.easydialchecker.exception.PersistenceException;
 import com.codechallenge.easydialchecker.model.EasyDialRequest;
 import com.codechallenge.easydialchecker.model.EasyDialResponse;
 import com.codechallenge.easydialchecker.model.EasyDialText;
@@ -23,7 +24,12 @@ public class EasyDialController {
     private static final Logger LOGGER = LoggerFactory.getLogger(EasyDialController.class);
 
     private static final String APPLICATION_JSON = "application/json";
-    private static final String EASYDIAL_PATH = "easydial";
+    private static final String EASY_DIAL_PATH = "easydial";
+
+    private static final String BAD_REQUEST_MESSAGE = "Bad Request - Request validation failure.";
+    private static final String CACHE_ENTRY_NOT_FOUND = "Unable to read input text from cache.";
+    private static final String EASY_DIAL_CHECK_MESSAGE = "Easy dial check tasks are completed.";
+    private static final String INTERNAL_SERVER_ERROR_MESSAGE = "Internal Server Error - Unable to process the request.";
 
     private final CacheService cacheService;
     private final EasyDialService easyDialService;
@@ -35,7 +41,7 @@ public class EasyDialController {
         this.validationService = validationService;
     }
 
-    @RequestMapping(method = RequestMethod.POST, path = EASYDIAL_PATH, consumes = APPLICATION_JSON, produces = APPLICATION_JSON)
+    @RequestMapping(method = RequestMethod.POST, path = EASY_DIAL_PATH, consumes = APPLICATION_JSON, produces = APPLICATION_JSON)
     public ResponseEntity<EasyDialResponse> checkEasyDial(@RequestBody EasyDialRequest easyDialRequest) {
         //Validate the incoming request
         boolean isValidRequest = validationService.isValidRequest(easyDialRequest);
@@ -49,19 +55,29 @@ public class EasyDialController {
             easyDialText = cacheService.readFromCache(numberText);
 
             if (null == easyDialText) {
-                LOGGER.info("Unable to read input text from cache.");
+                LOGGER.info(CACHE_ENTRY_NOT_FOUND);
                 //Execute easy dial check logic.
                 easyDialText = easyDialService.checkEasyToDial(numberText);
                 //Add input text to cache
                 cacheService.addToCache(easyDialText);
                 //persist input text and record.
-                easyDialService.saveEasyDialText(easyDialText);
+                try {
+                    easyDialService.saveEasyDialText(easyDialText);
+                } catch (PersistenceException exception) {
+                    // Internal server error occurred.
+                    easyDialResponse = generateResponse(HttpStatus.INTERNAL_SERVER_ERROR.value(), null);
+                    LOGGER.error(INTERNAL_SERVER_ERROR_MESSAGE);
+
+                    return easyDialResponse;
+                }
             }
+            // Successful request check.
             easyDialResponse = generateResponse(HttpStatus.OK.value(), easyDialText);
-            LOGGER.info("Easy dial check tasks are completed.");
+            LOGGER.info(EASY_DIAL_CHECK_MESSAGE);
         } else {
+            // Bad input request.
             easyDialResponse = generateResponse(HttpStatus.BAD_REQUEST.value(), null);
-            LOGGER.warn("Bad Request - Request validation failure.");
+            LOGGER.warn(BAD_REQUEST_MESSAGE);
         }
         return easyDialResponse;
     }
