@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "22a3c30d-8b84-4e32-ac49-f6f04a11351f",
+		"name": "EasyDialCheckerService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "2693383"
+	},
+	"item": [
+		{
+			"name": "success",
+			"item": [
+				{
+					"name": "EasyToDial Text - 2589654785",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "con",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"inputText\": \"2589654785\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/easydial"
+					},
+					"response": []
+				},
+				{
+					"name": "HardToDial Text - 1952374562",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"inputText\": \"1952374562\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/easydial"
+					},
+					"response": []
+				},
+				{
+					"name": "Vaid Text With Whitespace - 45908 65214",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"inputText\": \"   45908 65214   \"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/easydial"
+					},
+					"response": []
+				},
+				{
+					"name": "Valid Text With Tab, Newline- 2548\\n90\\t7423",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"inputText\": \"2548\\n90\\t7423\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/easydial"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "failure",
+			"item": [
+				{
+					"name": "Invalid Text With Special Characters - 15$23@68*07&2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"inputText\": \"15$23@68*07&2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/easydial"
+					},
+					"response": []
+				},
+				{
+					"name": "Invalid Text With Letters - ghjGHFkug5fg",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"inputText\": \"ghjGHFkug5fg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/easydial"
+					},
+					"response": []
+				},
+				{
+					"name": "Invalid Text with Null value",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"inputText\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/easydial"
+					},
+					"response": []
+				},
+				{
+					"name": "Invalid Text With Decimal - 159086.32",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"inputText\": \"159086.32\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/easydial"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
